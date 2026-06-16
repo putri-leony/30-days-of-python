@@ -28,3 +28,7 @@ print(type({9.8,3.14,2.7}))
 <class 'set'>
 print(type((9.8,3.14,2.7)))
 <class 'tuple'>
+ #Euclidean distance between (2,3) and (10,8)
+import math
+print(math.sqrt(((10-2)**2)+((8-3)**2)))
+9.433981132056603
