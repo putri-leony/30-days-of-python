@@ -179,3 +179,117 @@ Pto
 >>> yhn = language[1:6:2]
 >>> print(yhn)
 yhn
+>>> #String Methods
+>>> example = 'i work on monday'
+>>> print(example.capitalize())
+I work on monday
+>>> example = 'i work on monday'
+>>> print(example.count('y'))
+1
+>>> print(example.count('o'))
+3
+>>> print(example.count('on'))
+2
+>>> example = 'i work on monday'
+>>> print(example.endswith('day'))
+True
+>>> print(example.endswith('on'))
+False
+>>> example = 'i\twork\ton\tmonday'
+>>> print(example.expandtabs())
+i       work    on      monday
+>>> print(example.expandtabs(5))
+i    work on   monday
+>>> example = 'i work on monday'
+>>> print(example.find('o'))
+3
+>>> print(example.find('ork'))
+3
+>>> example = 'i work on monday'
+>>> print(example.rfind('y'))
+15
+>>> example = 'i work on monday'
+>>> sub_string = 'wo'
+>>> print(example.index(sub_string))
+2
+>>> print(example.index(sub_string, 5))
+Traceback (most recent call last):
+  File "<python-input-28>", line 1, in <module>
+    print(example.index(sub_string, 5))
+          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+ValueError: substring not found
+>>> example = 'iworkonmonday'
+>>> print(example.isalnum())
+True
+>>> example = 'i work on monday'
+>>> print(example.isalnum())
+False
+>>> example = 'iwork30days'
+>>> print(example.isalnum())
+True
+>>> example = 'i work on monday'
+>>> print(example.isalpha())
+False
+>>> ex = 'iworkonmonday'
+>>> print(ex.isalpha())
+True
+>>> ex = '30daysofpython'
+>>> print(ex.isalpha())
+False
+>>> example = 'i work on monday'
+>>> print(example.isdecimal())
+False
+>>> example = '888'
+>>> print(example.isdecimal())
+True
+>>> print(example.isdigit())
+True
+>>> example = 'eight'
+>>> print(example.isdigit())
+False
+>>> num = '10'
+>>> print(num.isnumeric())
+True
+>>> num = '10.5'
+>>> print(num.isnumeric())
+False
+>>> example = '30daysofpython'
+>>> print(example.isidentifier())
+False
+>>> example = 'thirty days of python'
+>>> print(example.isidentifier())
+False
+>>> example = 'thirty_days_of_python'
+>>> print(example.isidentifier())
+True
+>>> fruit = ['mango', 'apple', 'banana']
+>>> result = ' '.join(fruit)
+>>> print(result)
+mango apple banana
+>>> vegetables = ['spinach', 'kale', 'lettuce']
+>>> result = '# '.join(vegetables)
+>>> print(result)
+spinach# kale# lettuce
+>>> example = 'love jello'
+>>> print(example.strip('lo'))
+ve je
+>>> example = 'i love work'
+>>> print(example.replace('work', 'money'))
+i love money
+>>> example = 'monday tuesday wednesday thursday'
+>>> print(example.split())
+['monday', 'tuesday', 'wednesday', 'thursday']
+>>> example = 'the warrior of wakanda'
+>>> print(example.title())
+The Warrior Of Wakanda
+>>> example = 'stop climate change'
+>>> print(example.swapcase())
+STOP CLIMATE CHANGE
+>>> example = 'Reduce REuse Recycle'
+>>> print(example.swapcase())
+rEDUCE reUSE rECYCLE
+>>> example = 'start your day with coffee'
+>>> print(example.startswith('start'))
+True
+>>> print(example.startswith('coffee'))
+False
